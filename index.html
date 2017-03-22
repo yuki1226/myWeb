@@ -10,6 +10,10 @@
   padding: 1em;
   text-align: center;
  }
+ .myContainer {
+    margin:0 auto
+    width:800px;
+ }
  nav{
   background-color: blue;
   height: 50px;
@@ -48,9 +52,17 @@ div#myAddress {
  </head>
  <body>
    <!-- Write your header here -->
-   <header> <h1>  my header</h1> </header>
+   <header> 
+    <div class="myContainer">
+    <h1>  my header</h1> 
+    </div>
+   </header>
     <!-- Write your nav here -->
-   <nav> my nav </nav>
+   <nav> 
+    <div class="myContainer">
+    my nav
+    </div>
+   </nav>
   <!-- Write your aside here -->
    <aside> my aside </aside> 
   <!-- Write your section here -->
@@ -61,13 +73,16 @@ div#myAddress {
   <article> my article4 </article>
   </section>
   <!-- Write your footer here -->
-   <footer> my footer 
-   <img src="myQr-code.jpg"  style=" height: 120px;padding: 10px;" >
-   <div id = "myAddress"> 
-       <p>更新日期：2017年03月16日</p>
-       <p>校本部 高雄市84001大樹區學城路一段1號 Tel:(07)6577711</p>
-       <p>醫學院區 高雄市82445燕巢區角宿里義大路8號 Tel:(07)6151100</p>
-   </div>
+   <footer> 
+    <div class="myContainer">
+    my footer 
+    <img src="myQr-code.jpg"  style=" height: 120px;padding: 10px;" >
+         <div id = "myAddress"> 
+            <p>更新日期：2017年03月16日</p>
+            <p>校本部 高雄市84001大樹區學城路一段1號 Tel:(07)6577711</p>
+            <p>醫學院區 高雄市82445燕巢區角宿里義大路8號 Tel:(07)6151100</p>
+         </div>
+    </div>
   </footer>
    
   </body>
