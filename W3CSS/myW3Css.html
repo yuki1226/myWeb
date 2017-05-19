@@ -17,10 +17,11 @@
 <body>
 
   <div class="w3-container w3-teal">
-    <h1>my Slideshow</h1>
+    <h1 class="w3-center">my Slideshow</h1>
   </div>
-  <div class="w3-container w3-display-container">
-    <h1>put at least 4 photos here</h1>
+  <div class="w3-content"  style="width:800px;">
+    <span>Manual SlideShow</span>
+    <div class="w3-display-container">
     <img class="mySlides" src="slideShow1.jpg" style="width:100%">
     <img class="mySlides" src="slideShow2.jpg" style="width:100%">
     <img class="mySlides" src="slideShow3.jpg" style="width:100%">
@@ -30,8 +31,6 @@
     <button class="w3-button w3-khaki w3-display-right" onclick="plusDivs(1)">&#10095;</button>
   </div>
   
-  
-              
   <script>
   var slideIndex = 1;
   showDivs(slideIndex);
@@ -53,7 +52,7 @@
 </script>
   <h2>HTML slides</h2>
   <div class="w3-content" style="max-width:400px;">
-    <div class="w3-container w3-red">
+   <div class="myAutoSlides w3-container w3-red">
       <h1>1</h1>
       <p>w3-container</p>
       <p>w3-red</p>
@@ -67,7 +66,23 @@
       <p>w3-card-4</p>
     </div>
     <img class="myAutoSlide" src="Singapore.jpg" />
-  </div>
+     </div>
+     <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myAutoSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
   <div class="w3-container w3-lime">
     <h1>my Slideshow footer</h1>
   </div>
