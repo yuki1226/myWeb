@@ -2,17 +2,31 @@
 <html>
 <head>
 <title>my Dropdown Menu</title>
-<style></style>
+<style>
+  .dropdown-content a{
+          display:block;
+          text-decoration:none;
+          padding:12px 16px;
+        }
+ .dropbtn{
+         background:#4CAF50;
+         color:white;
+         font-size:20px;
+         border:none;
+         padding:16px;
+         cursor:pointer;
+        }
+        </style>
 </head>
 <body>
 <h1>my dropdown menu</h1>
 <hr/>
 <div class="dropdown">
-<button>A</button>
+<button class="dropbtn">A Button Menu</button>
 <div class="dropdown-content">
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
 </div>
 </div>
 </body>
